@@ -1,0 +1,109 @@
+.project-function {
+  margin-top: 100px;
+  margin-bottom: 40px;
+  font-size: 30px;
+  color: #4a2574;
+}
+
+.project-function span {
+  color: #ff00ff;
+}
+
+.project-section {
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.project-individual-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.project-individual-section .project-image {
+  width: 30vw;
+  height: 200px;
+  border-radius: 10px;
+  transition: all 0.1s ease;
+}
+
+.project-individual-section .project-image:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 40px rgba(15, 66, 114, 0.59);
+}
+
+.project-individual-section .project-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-individual-section .project-content .project-button {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.project-individual-section .project-content .project-button .github {
+  padding: 10px 20px 10px 20px;
+  background: #c3e7ef;
+  color: #222222;
+  border: 2px solid #222222;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.project-individual-section .project-content .project-button .github:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+  background: #0172b0;
+  box-shadow: 0 12px 40px rgba(10, 68, 122, 0.59);
+}
+
+.project-individual-section .project-content .project-button .details {
+  padding: 10px 20px 10px 20px;
+  background: #c3e7ef;
+  color: #222222;
+  border: 2px solid #222222;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.project-individual-section .project-content .project-button .details:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+  background: #0172b0;
+  box-shadow: 0 12px 40px rgba(10, 68, 122, 0.59);
+}
+
+.project-individual-section .project-content .project-title {
+  font-family: "Rubik", sans-serif;
+  font-size: 20px;
+  color: #669913ff;
+  text-transform: bold;
+}
+
+.project-individual-section .project-content .project-intro {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  color: #7b7b7b;
+}
+
+.project-function-closing {
+  padding-bottom: 100px;
+  border-bottom: 1px solid #7b7b7b;
+  font-size: 30px;
+  color: #ff00ff;
+}

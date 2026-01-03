@@ -1,0 +1,28 @@
+.contact-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-title p {
+  font-size: 30px;
+  color: #669913ff;
+  font-family: "Rubik", sans-serif;
+}
+
+.contact-title .logo {
+  color: pink;
+  width: 50px;
+  height: 50px;
+  animation: Rotate 3s ease infinite;
+}
+
+@keyframes Rotate {
+  0%,
+  100% {
+    transform: rotate(-5deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(5deg) scale(1);
+  }
+}
