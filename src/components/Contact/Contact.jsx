@@ -3,8 +3,30 @@ import { IoIosMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import "./Contact.css";
+import { useState } from "react";
 
 const Contact = () => {
+  const [result, setResult] = useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+    formData.append("access_key", "e690f697-3836-4870-b868-3e48f8d40984");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await response.json();
+    if (data.success) {
+      setResult("Message Delivered Successfully!");
+      event.target.reset();
+    } else {
+      setResult("Error!");
+    }
+  };
   return (
     <div className="contact-block">
       <div className="contact-title">
@@ -35,7 +57,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <form className="form-section">
+        <form className="form-section" onSubmit={onSubmit}>
           <label htmlFor="">Your Name</label>
           <input type="text" placeholder="Enter your name" name="name" />
           <label htmlFor="">Your Email</label>
@@ -46,9 +68,12 @@ const Contact = () => {
             rows="8"
             placeholder="Enter your message"
           ></textarea>
-          <button type="submit" className="form-submit">
-            Submit
-          </button>
+          <div className="result">
+            <button type="submit" className="form-submit">
+              Submit
+            </button>
+            <span>{result}</span>
+          </div>
         </form>
       </div>
       <div className="contact-title-closing">

@@ -128,6 +128,13 @@
   box-shadow: 0 12px 40px rgba(10, 68, 122, 0.59);
 }
 
+.form-section .result {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color: #0172b0;
+}
+
 .contact-title-closing {
   margin-top: 25px;
   color: #ff00ff;
