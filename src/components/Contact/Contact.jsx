@@ -6,7 +6,7 @@ import "./Contact.css";
 
 const Contact = () => {
   return (
-    <>
+    <div className="contact-block">
       <div className="contact-title">
         Contact (<span id="inputs"> name, email, message</span> ){" "}
         <span>{"{"}</span>
@@ -54,7 +54,7 @@ const Contact = () => {
       <div className="contact-title-closing">
         <span>{"}"}</span>
       </div>
-    </>
+    </div>
   );
 };
 

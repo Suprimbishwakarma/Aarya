@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
   return (
-    <>
+    <div className="project-block">
       <p className="project-function">
         Projects ( ) <span>{"{"}</span>
       </p>
@@ -25,14 +25,10 @@ const Projects = () => {
               intensity levels.
             </p>
             <div className="project-button">
-              <div>
-                <button className="github">
-                  <FaGithub />
-                </button>
-              </div>
-              <div>
-                <button className="details">view details</button>
-              </div>
+              <button className="github">
+                <FaGithub />
+              </button>
+              <button className="details">view details</button>
             </div>
           </div>
         </div>
@@ -66,7 +62,7 @@ const Projects = () => {
       <p className="project-function-closing">
         <span>{"}"}</span>
       </p>
-    </>
+    </div>
   );
 };
 

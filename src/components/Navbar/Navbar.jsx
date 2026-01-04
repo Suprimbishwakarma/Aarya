@@ -8,22 +8,22 @@ import "./Navbar.css";
 const Navbar = () => {
   return (
     <div className="navbar">
-      <div className="home">
+      <a href="#home" className="home">
         <FaHome className="icon" />
         <p>Home</p>
-      </div>
-      <div className="projects">
+      </a>
+      <a href="#projects" className="projects">
         <HiOutlineLightBulb className="icon" />
         <p className="name">Projects</p>
-      </div>
-      <div className="skills">
+      </a>
+      <a href="#skills" className="skills">
         <GiSkills className="icon" />
         <p className="name">Skills</p>
-      </div>
-      <div className="contact">
+      </a>
+      <a href="#contact" className="contact">
         <TiContacts className="icon" />
         <p className="name">Contact</p>
-      </div>
+      </a>
     </div>
   );
 };

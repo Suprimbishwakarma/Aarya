@@ -1,8 +1,12 @@
 .home-body {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   margin-top: 80px;
+  padding: 0 20px;
+  border-bottom: 1px solid #7b7b7b;
 }
 
 .home-body p {
@@ -11,10 +15,11 @@
 
 .home-body .user {
   font-family: "BBH Bartle", cursive;
+  width: 80vw;
+  max-width: 80vw;
   font-size: 2rem;
   font-weight: 900;
   color: #c2b87f;
-  margin: 1rem 0;
   text-shadow: 0 4px 20px rgba(188, 132, 81, 0.3);
   border-left: 1px solid #7b7b7b;
   border-right: 1px solid #7b7b7b;
@@ -28,17 +33,41 @@
 
 .stack {
   font-size: 24px;
-  font-family: "Rubik", sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
 .intro {
   color: #7b7b7b;
   font-style: italic;
+  margin: 0 auto;
 }
 
 .message {
   margin-top: 10px;
   color: #3b82f6;
   padding-bottom: 100px;
-  border-bottom: 1px solid #7b7b7b;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .home-body {
+    margin-top: 100px;
+    padding: 0 15px;
+  }
+
+  .greet {
+    font-size: 28px;
+  }
+
+  .home-body .user {
+    font-size: 1.2rem;
+  }
+
+  .stack {
+    font-size: 20px;
+  }
+
+  .intro {
+    font-size: 14px;
+  }
 }
