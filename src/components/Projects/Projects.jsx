@@ -1,6 +1,11 @@
 import React from "react";
 import "./Projects.css";
-import { roastify, codeExplainer } from "../../assets/assets";
+import {
+  roastify,
+  codeExplainer,
+  portfolio,
+  backend,
+} from "../../assets/assets";
 import { FaGithub } from "react-icons/fa";
 
 const Projects = () => {
@@ -25,9 +30,14 @@ const Projects = () => {
               intensity levels.
             </p>
             <div className="project-button">
-              <button className="github">
-                <FaGithub />
-              </button>
+              <a
+                href="https://github.com/Suprimbishwakarma/Roastify"
+                target="_blank"
+              >
+                <button className="github">
+                  <FaGithub />
+                </button>
+              </a>
               <button className="details">view details</button>
             </div>
           </div>
@@ -47,16 +57,69 @@ const Projects = () => {
               programming language.
             </p>
             <div className="project-button">
-              <button className="github">
-                <FaGithub />
-              </button>
+              <a
+                href="https://github.com/Suprimbishwakarma/AI-Code-Explainer"
+                target="_blank"
+              >
+                <button className="github">
+                  <FaGithub />
+                </button>
+              </a>
               <button className="details">view details</button>
             </div>
           </div>
         </div>
-        <div>
-          <div></div>
-          <div></div>
+
+        <div className="project-individual-section">
+          <div>
+            <img src={backend} className="project-image" />
+          </div>
+          <div className="project-content">
+            <p className="project-title">Introduction to Backend Development</p>
+            <p className="project-intro">
+              A robust backend API built with Node.js, Express.js, and MongoDB,
+              designed to demonstrate core backend concepts including user
+              authentication and CRUD operations for posts.
+            </p>
+            <div className="project-button">
+              <a
+                href="https://github.com/Suprimbishwakarma/Into-to-backend-web-development"
+                target="_blank"
+              >
+                <button className="github">
+                  <FaGithub />
+                </button>
+              </a>
+              <button className="details">view details</button>
+            </div>
+          </div>
+        </div>
+
+        <div className="project-individual-section">
+          <div>
+            <img src={portfolio} className="project-image" />
+          </div>
+          <div className="project-content">
+            <p className="project-title">First Personal Portfolio</p>
+            <p className="project-intro">
+              This project is a modern, responsive, and visually stunning
+              developer portfolio designed to showcase skills, projects, and
+              professional experience. The design philosophy focuses on
+              interactive storytelling, ensuring that every visitor gets a
+              unique insight into the developer's journey.
+            </p>
+            <div className="project-button">
+              <a
+                href="https://github.com/Suprimbishwakarma/Aarya"
+                target="_blank"
+              >
+                <button className="github">
+                  <FaGithub />
+                </button>
+              </a>
+              <button className="details">view details</button>
+            </div>
+          </div>
         </div>
       </div>
       <p className="project-function-closing">
