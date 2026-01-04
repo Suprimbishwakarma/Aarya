@@ -30,13 +30,12 @@
 .contact-section {
   display: flex;
   flex-direction: column;
-  padding: 20px 0 20px 20px;
   gap: 20px;
-  flex: 1;
+  padding: 20px 0 20px 20px;
 }
 
 .contact-section p {
-  max-width: 550px;
+  max-width: 100%;
   font-family: "Ubuntu", sans-serif;
   font-size: 14px;
   font-style: italic;
@@ -64,7 +63,6 @@
   font-family: "Rubik", sans-serif;
   color: #808000;
   font-size: 16px;
-  word-break: break-all;
 }
 
 .contact-detail .icons {
@@ -75,11 +73,10 @@
 .form-section {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   gap: 10px;
-  flex-shrink: 1;
-  width: 100%;
   padding: 20px 20px 20px 0;
+  width: 100%;
 }
 
 .form-section label {
@@ -138,45 +135,4 @@
   font-family: "Rubik", sans-serif;
   padding-bottom: 50px;
   border-bottom: 1px solid #222222;
-}
-
-@media (max-width: 768px) {
-  .contact-block {
-    width: 90vw;
-    margin-top: 100px;
-  }
-
-  .contact-body-main {
-    flex-direction: column;
-    gap: 20px;
-  }
-
-  .contact-section,
-  .form-section {
-    width: 100%;
-  }
-
-  .contact-section p {
-    font-size: 14px;
-  }
-
-  .contact-title {
-    font-size: 24px;
-  }
-
-  .contact-title #inputs {
-    font-size: 14px;
-  }
-
-  .contact-detail {
-    font-size: 14px;
-  }
-
-  .contact-detail span {
-    font-size: 14px;
-  }
-
-  .form-section input {
-    width: 300px;
-  }
 }
