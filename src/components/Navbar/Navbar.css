@@ -47,3 +47,28 @@ p {
   font-family: "Rubik", "Ubuntu";
   color: #222222;
 }
+
+@media (max-width: 768px) {
+  .navbar {
+    width: 90%;
+    margin-top: 10px;
+    padding: 5px;
+  }
+
+  .home,
+  .projects,
+  .contact,
+  .skills {
+    gap: 4px;
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    padding: 8px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+}

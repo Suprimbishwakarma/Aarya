@@ -34,3 +34,18 @@
   font-family: "Rubik", sans-serif;
   color: #0437f2;
 }
+
+@media (max-width: 768px) {
+  .copyright-section {
+    padding: 0 10px;
+  }
+
+  .copyright-body p {
+    font-size: 14px;
+  }
+
+  .copyright-icon {
+    font-size: 14px;
+    text-align: center;
+  }
+}
