@@ -1,0 +1,27 @@
+.skills-title {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-family: "Rubik", sans-serif;
+  color: #4a2574;
+}
+
+.skills-title span {
+  color: #ff00ff;
+}
+
+.skills-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-title-closing {
+  margin-top: 25px;
+  color: #ff00ff;
+  font-size: 30px;
+  font-family: "Rubik", sans-serif;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #222222;
+}

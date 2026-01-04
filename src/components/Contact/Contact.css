@@ -1,28 +1,132 @@
 .contact-title {
+  margin-top: 100px;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-family: "Rubik", sans-serif;
+  color: #4a2574;
+}
+
+.contact-title span {
+  color: #ff00ff;
+}
+
+.contact-title #inputs {
+  font-size: 16px;
+  color: #84cc16;
+}
+
+.contact-body-main {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 50px;
+  width: 70vw;
+  margin: 0 auto;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.contact-title p {
-  font-size: 30px;
-  color: #669913ff;
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-section p {
+  max-width: 550px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  color: #7b7b7b;
+}
+
+.contact-section .forward {
+  font-family: "Rubik";
+  color: #0437f2;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-detail {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-detail span {
   font-family: "Rubik", sans-serif;
+  color: #808000;
+  font-size: 16px;
 }
 
-.contact-title .logo {
-  color: pink;
-  width: 50px;
-  height: 50px;
-  animation: Rotate 3s ease infinite;
+.contact-detail .icons {
+  font-size: 22px;
 }
 
-@keyframes Rotate {
-  0%,
-  100% {
-    transform: rotate(-5deg) scale(1.1);
-  }
-  50% {
-    transform: rotate(5deg) scale(1);
-  }
+.form-section {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+}
+
+.form-section label {
+  color: #222222;
+  font-size: 16px;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.form-section input {
+  border: none;
+  width: 500px;
+  height: 45px;
+  padding-left: 20px;
+  border-radius: 4px;
+  background: #32323c;
+  color: #a0a0a0;
+  font-family: "Rubik";
+  font-size: 14px;
+}
+
+.form-section textarea {
+  width: 450px;
+  border: none;
+  padding: 25px;
+  border-radius: 4px;
+  background: #32323c;
+  color: #a0a0a0;
+  font-family: "Rubik";
+  font-size: 14px;
+}
+
+.form-submit {
+  border: none;
+  color: #222222;
+  border: 2px solid #222222;
+  border-radius: 10px;
+  background: #c3e7ef;
+  font-size: 18px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.form-submit:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+  background: #0172b0;
+  box-shadow: 0 12px 40px rgba(10, 68, 122, 0.59);
+}
+
+.contact-title-closing {
+  margin-top: 25px;
+  color: #ff00ff;
+  font-size: 30px;
+  font-family: "Rubik", sans-serif;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #222222;
 }

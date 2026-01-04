@@ -10,7 +10,7 @@ const Home = () => {
       <p className="intro">
         Full-stack developer passionate about building innovative web
         applications that solves real problems and puts a smile in your face. My
-        work spans AI-powered developer tools, OAuth -integrated entertainment
+        work spans AI-powered developer tools, OAuth-integrated entertainment
         apps, and secure RESTful APIs. I focus on clean architecture and
         scalable solutions.
       </p>

@@ -1,0 +1,36 @@
+.copyright-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.copyright-logo {
+  height: 50px;
+  width: 50px;
+  animation: King 3s ease infinite;
+}
+
+@keyframes King {
+  0%,
+  100% {
+    transform: scale(1.3);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+
+.copyright-body p {
+  text-align: center;
+  font-style: italic;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.copyright-icon {
+  font-family: "Rubik", sans-serif;
+  color: #0437f2;
+}
