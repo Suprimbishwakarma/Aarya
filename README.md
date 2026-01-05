@@ -38,8 +38,10 @@ src/
 │   ├── Copyright/
 │   ├── Home/
 │   ├── Navbar/
+│   ├── ProjectDetails/
 │   ├── Projects/
 │   └── Skills/
+├── constants/
 ├── App.jsx       # Main application component
 ├── main.jsx      # Entry point
 └── index.css     # Global styles and variables
@@ -56,16 +58,19 @@ Ensure you have **Node.js** installed on your machine.
 ### Installation
 
 1. **Clone the repository**
+
    ```bash
    git clone https://github.com/Suprimbishwakarma/Aarya.git
    ```
 
 2. **Navigate to the project directory**
+
    ```bash
    cd Aarya
    ```
 
 3. **Install dependencies**
+
    ```bash
    npm install
    ```
