@@ -8,7 +8,7 @@ import Skills from "./components/Skills/Skills";
 
 const App = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <div>
         <div id="home">
@@ -25,7 +25,7 @@ const App = () => {
         </div>
         <Copyright />
       </div>
-    </div>
+    </>
   );
 };
 

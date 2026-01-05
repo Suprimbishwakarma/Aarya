@@ -111,6 +111,10 @@ const Skills = () => {
         { name: "API Integration" },
         { name: "Error Handling" },
         { name: "Responsive Design" },
+        {
+          name: "Bcrypt",
+        },
+        { name: "dotenv" },
       ],
     },
   ];
