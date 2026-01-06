@@ -12,7 +12,7 @@ The design philosophy focuses on **interactive storytelling**, ensuring that eve
 
 ## ✨ Features
 
-- **🎨 Fully Responsive Design**: Optimized for desktops, tablets, and mobile devices.
+- **🎨 Web Responsive**: Optimized for desktops, tablets, and laptops.
 - **⚡ High Performance**: Powered by Vite for lightning-fast reloading and building.
 - **🖱️ Smooth Navigation**: Seamless scrolling and intuitive navigation bar.
 - **🖼️ Dynamic Project Showcase**: Elegant cards to display projects with links and descriptions.
@@ -34,6 +34,7 @@ This project leverages the power of modern web technologies:
 src/
 ├── assets/       # Static assets and images
 ├── components/   # Reusable UI components
+│   ├── About/
 │   ├── Contact/
 │   ├── Copyright/
 │   ├── Home/
