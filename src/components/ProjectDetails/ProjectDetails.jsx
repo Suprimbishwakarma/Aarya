@@ -6,8 +6,12 @@ import {
   FaStar,
   FaCode,
   FaServer,
+  FaExclamationTriangle,
+  FaConnectdevelop,
   FaProjectDiagram,
+  FaLightbulb,
 } from "react-icons/fa";
+import { BsFillCpuFill } from "react-icons/bs";
 
 const ProjectDetails = ({ project, onClose }) => {
   useEffect(() => {
@@ -39,6 +43,23 @@ const ProjectDetails = ({ project, onClose }) => {
           <div className="detail-section">
             <h3 className="section-title">About the project</h3>
             <p className="detail-description">{project.details}</p>
+          </div>
+
+          <div>
+            <h3 className="section-title">
+              <BsFillCpuFill />
+              Output
+            </h3>
+            <img src={project.result} className="detail-image" />
+          </div>
+
+          <div className="detail-section">
+            <h3 className="section-title">Screenshots</h3>
+            <div className="features-list">
+              {project.screenshots.map((pic, index) => (
+                <img src={pic} key={index} className="shots" />
+              ))}
+            </div>
           </div>
 
           <div className="detail-section">
@@ -101,6 +122,53 @@ const ProjectDetails = ({ project, onClose }) => {
                 <FaProjectDiagram /> Workflow
               </h3>
               <div className="flowchart-box">{project.flowChart}</div>
+            </div>
+          )}
+
+          {project.challenges && (
+            <div className="detail-section">
+              <h3 className="section-title">
+                <FaExclamationTriangle /> Challenges
+              </h3>
+              <ul className="features-list">
+                {project.challenges.map((challenge, index) => (
+                  <li key={index} className="feature-item">
+                    {challenge}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {project.contentConsumed && (
+            <div className="detail-section">
+              <h3 className="section-title">
+                <FaConnectdevelop /> content Consumed
+              </h3>
+              <ul className="features-list">
+                {project.contentConsumed.map((challenge, index) => (
+                  <li key={index} className="feature-item">
+                    <a href={challenge} target="_blank">
+                      {challenge}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
+          {project.learnings && (
+            <div className="detail-section">
+              <h3 className="section-title">
+                <FaLightbulb /> Learnings
+              </h3>
+              <ul className="features-list">
+                {project.learnings.map((learning, index) => (
+                  <li key={index} className="feature-item">
+                    {learning}
+                  </li>
+                ))}
+              </ul>
             </div>
           )}
 

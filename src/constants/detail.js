@@ -1,13 +1,27 @@
-import { roastify, backend, codeExplainer, portfolio } from "../assets/assets";
+import {
+  roastify,
+  codeExplainer,
+  Result,
+  homepage,
+  RoastMe,
+  topTracks,
+  spotify,
+  image01,
+  image02,
+  image03,
+  image04,
+  Output,
+} from "../assets/assets";
 
 export const projectData = [
   {
     id: "roastify",
     title: "Roastify: AI Powered Spotify Music Roaster",
     description:
-      "A full-stack entertainment web application that connects to Spotify via OAuth 2.0, analyzes user's music taste, and delivers personalized, humorous AI generated roasts.",
+      "A full-stack entertainment web application that connects to Spotify via OAuth 2.0, analyzes user's music taste, and delivers personalized, humorous AI-generated roasts.",
     details:
       "Roastify is a unique full-stack web application designed to entertain users by analyzing their musical taste. The sole purpose of this project is to entertain spotify User. By integrating Spotify's API and Gemini AI model, it generates witty and personalized roasts based on listening history of the user. The application features a secure OAuth 2.0 authentication flow, ensuring user data privacy. Users can adjust the roast intensity, making it a fun and interactive experience.",
+    screenshots: [spotify, homepage, topTracks, RoastMe],
     technologies: [
       "React",
       "React-Router",
@@ -22,6 +36,7 @@ export const projectData = [
       "express-session",
       "express-rate-limit",
     ],
+    result: Result,
     image: roastify,
     githubLink: "https://github.com/suprimbishwakarma/Roastify",
     keyFeatures: [
@@ -98,14 +113,36 @@ export const projectData = [
     ],
     flowChart:
       "User Login -> Spotify OAuth -> Fetch Listening History -> Send Data to Gemini -> Generate Roast -> Display to User",
+    challenges: [
+      "Spotify OAuth 2.0 implementation",
+      "Finding the working AI model for free tier",
+      "Multiple third party APIs integration",
+      "Reading data from JSON objects returned by spotify",
+      "Creating a best prompt for AI model so that the response will be digestible",
+    ],
+    contentConsumed: [
+      "https://oauth.net/2/",
+      "https://www.geeksforgeeks.org/web-tech/json-web-token-jwt/",
+      "https://ai.google.dev/gemini-api/docs",
+      "https://developer.spotify.com/documentation/web-api",
+      "https://developers.google.com/identity/protocols/oauth2/web-server#node.js",
+    ],
+    learnings: [
+      "Gained experience with Gemini AI API parameters (temperature, max_tokens)",
+      "Learned to handle asynchronous server actions",
+      "learned multiple third party API integration",
+      "learned to work with raw JSON data",
+      "got familiar with basic prompt engineering",
+    ],
   },
   {
     id: "code-explainer",
     title: "AI Code Explainer: Intelligent Code Analysis Tool",
     description:
-      "A full-stack web application that uses openAI's language model to provide instant, clear explanations of code in multiple programming language.",
+      "A full-stack web application that uses OpenAI's language model to provide instant, clear explanations of code in multiple programming languages.",
     details:
       "The AI Code Explainer was built for educational purposes for developers of all levels. It allows user to input code snippets in various languages and receive instant human-readable explanations. The backend leverages OpenAI model to parse and interpret complex logic, breaking it down into simple terms. This tool is particularly useful for debugging.",
+    screenshots: [image01, image02, image03, image04],
     technologies: [
       "React",
       "Express",
@@ -115,6 +152,7 @@ export const projectData = [
       "express-rate-limit",
       "RESTful API",
     ],
+    result: Output,
     image: codeExplainer,
     githubLink: "https://github.com/suprimbishwakarma/AI-Code-Explainer",
     keyFeatures: [
@@ -164,7 +202,25 @@ export const projectData = [
     ],
     flowChart:
       "User selects language, gives code -> Send to Backend -> OpenAI Analysis -> Return Explanation -> Render in UI",
+    challenges: [
+      "Finding the working AI model for free tier",
+      "Understanding useActionState hook",
+      "prompt engineering",
+      "API integration",
+      "Ensuring the backend didn't crash from API abuse",
+    ],
+    contentConsumed: [
+      "https://react.dev/reference/react/useActionState",
+      "https://tokenfactory.nebius.com/",
+    ],
+    learnings: [
+      "Learned about working with LLMs",
+      "learned a new react hook (useActionState)",
+      "learned full-stack integration",
+      "got familiar with basic prompt engineering",
+    ],
   },
+  /*
   {
     id: "backend-dev",
     title: "Introduction to Backend Development",
@@ -262,5 +318,5 @@ export const projectData = [
     ├── main.jsx      # Entry point
     └── index.css     # Global styles and variables
     `,
-  },
+  }, */
 ];

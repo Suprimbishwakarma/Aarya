@@ -39,6 +39,7 @@
   font-family: "Ubuntu", sans-serif;
   font-size: 14px;
   font-style: italic;
+  text-align: justify;
   color: #7b7b7b;
 }
 
@@ -119,6 +120,10 @@
   padding: 10px 30px;
   cursor: pointer;
   transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
 }
 
 .form-submit:hover {
@@ -144,9 +149,9 @@
   border-bottom: 1px solid #222222;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .contact-block {
-    width: 90vw;
+    width: 100vw;
     margin-top: 100px;
   }
 
@@ -154,6 +159,7 @@
     flex-direction: column;
     gap: 20px;
     padding-bottom: 20px;
+    width: 90vw;
   }
 
   .contact-section {
@@ -188,4 +194,4 @@
   .contact-detail span {
     font-size: 12px;
   }
-}
+} */

@@ -48,7 +48,7 @@ p {
   color: #222222;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .navbar {
     width: 90%;
     margin-top: 10px;
@@ -71,4 +71,4 @@ p {
   p {
     font-size: 14px;
   }
-}
+} */

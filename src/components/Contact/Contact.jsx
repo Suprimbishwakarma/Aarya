@@ -2,6 +2,7 @@ import React from "react";
 import { IoIosMail } from "react-icons/io";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
+import { IoIosSend } from "react-icons/io";
 import "./Contact.css";
 import { useState } from "react";
 
@@ -36,10 +37,11 @@ const Contact = () => {
       <div className="contact-body-main">
         <div className="contact-section">
           <h1>Let's talk</h1>
+          <p className="forward">Let's build something amazing together!</p>
           <p>
-            I'm currently available to take on new projects, so feel free to
-            send me a message about anything that you want me to work on. You
-            can contact anytime.
+            I'm always open to discussing on new opportunities, freelance
+            projects, collaborations, or just chatting about tech. Drop me a
+            message - I'll get back to you within 24-48hours!
           </p>
           <p className="forward">I am looking forward to hearing from you.</p>
           <div className="contact-details">
@@ -59,18 +61,18 @@ const Contact = () => {
         </div>
         <form className="form-section" onSubmit={onSubmit}>
           <label htmlFor="">Your Name</label>
-          <input type="text" placeholder="Enter your name" name="name" />
+          <input type="text" placeholder="your name" name="name" />
           <label htmlFor="">Your Email</label>
-          <input type="email" placeholder="Enter your email" name="email" />
+          <input type="email" placeholder="your.mail@gmail.com" name="email" />
           <label htmlFor="">Write your message here</label>
           <textarea
             name="message"
             rows="8"
-            placeholder="Enter your message"
+            placeholder="Tell me about your project, idea or just say hi!"
           ></textarea>
           <div className="result">
             <button type="submit" className="form-submit">
-              Submit
+              Send Message <IoIosSend />
             </button>
             <span>{result}</span>
           </div>

@@ -10,7 +10,7 @@ const Copyright = () => {
         <p>
           Designed loosely in paper and coded in VS code by yours very truly,
         </p>
-        <p>built using React.js and CSS, deployed to vercel.</p>
+        <p>built using React.js and Vanilla CSS, deployed to Netlify.</p>
       </div>
       <p className="copyright-icon">&copy; 2025 Suprim bishwakarma (Aarya)</p>
     </div>

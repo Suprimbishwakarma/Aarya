@@ -116,8 +116,12 @@
   color: #ff00ff;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .project-block {
+    width: 100vw;
+  }
+
+  .project-section {
     width: 90vw;
   }
 
@@ -149,4 +153,4 @@
     font-size: 14px;
     width: 100%;
   }
-}
+} */

@@ -32,7 +32,7 @@
 }
 
 .stack {
-  font-size: 24px;
+  font-size: 22px;
   font-family: "Ubuntu", sans-serif;
 }
 
@@ -45,13 +45,38 @@
 .message {
   margin-top: 10px;
   color: #3b82f6;
-  padding-bottom: 100px;
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+.home-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 100px;
+}
+
+.home-button {
+  padding: 10px 20px 10px 20px;
+  font-size: 16px;
+  background: #c3e7ef;
+  color: #222222;
+  border: 2px solid #222222;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.home-button:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+  background: #0172b0;
+  box-shadow: 0 12px 40px rgba(10, 68, 122, 0.59);
+}
+
+/* @media (max-width: 768px) {
   .home-body {
     margin-top: 100px;
+    width: 100vw;
     padding: 0 15px;
   }
 
@@ -70,4 +95,4 @@
   .intro {
     font-size: 14px;
   }
-}
+} */
