@@ -10,6 +10,7 @@ import image02 from "./codeExplainer/image02.png";
 import image03 from "./codeExplainer/image03.png";
 import image04 from "./codeExplainer/image04.png";
 import Output from "./codeExplainer/Output.png";
+import profile from "./profile.png";
 
 export {
   roastify,
@@ -24,4 +25,5 @@ export {
   image03,
   image04,
   Output,
+  profile,
 };

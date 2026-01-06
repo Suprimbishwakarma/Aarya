@@ -1,0 +1,133 @@
+.about-block {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-title {
+  font-size: 30px;
+  color: #4a2574;
+  font-family: "Rubik", sans-serif;
+  margin-top: 100px;
+  padding-bottom: 40px;
+}
+
+.about-title span {
+  color: #ff00ff;
+}
+
+.about-body {
+  width: 70vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.introduction {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.profile {
+  height: 200px;
+  width: 200px;
+}
+
+.traits {
+  background: #f8f8f8;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.traits h3 {
+  font-family: "Rubik", sans-serif;
+  color: #669913ff;
+  font-size: 20px;
+  font-weight: 450;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #669913ff;
+}
+
+.trait-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 10px;
+  font-family: "Ubuntu", sans-serif;
+  color: #555;
+  font-size: 16px;
+}
+
+.trait-item span {
+  font-size: 16px;
+}
+
+.trait-icon {
+  color: #ff00ff;
+  font-size: 18px;
+}
+
+.about-section-heading {
+  font-family: "Rubik", sans-serif;
+  color: #669913ff;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 450;
+  text-align: center;
+}
+
+.about-section p {
+  font-family: "ubuntu", sans-serif;
+  color: #7b7b7b;
+  font-size: 18px;
+}
+
+.solution {
+  text-align: center;
+}
+
+.table-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.table-detail-card {
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 10px;
+  border-top: 3px solid #f17a3b;
+  transition: transform 0.3s ease;
+}
+
+.table-detail-card:hover {
+  transform: translateY(-5px);
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.table-detail-card h4 {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  padding-bottom: 5px;
+  color: #4a2574;
+}
+
+.table-detail-card p {
+  font-size: 16px;
+}
+
+.about-title-closing {
+  font-size: 30px;
+  color: #ff00ff;
+  font-family: "Rubik", sans-serif;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid #222222;
+}

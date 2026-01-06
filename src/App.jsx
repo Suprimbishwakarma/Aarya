@@ -15,7 +15,7 @@ const App = () => {
         <div id="home">
           <Home />
         </div>
-        <div id="about">
+        <div>
           <About />
         </div>
         <div id="projects">
