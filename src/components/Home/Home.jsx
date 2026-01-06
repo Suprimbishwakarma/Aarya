@@ -1,5 +1,7 @@
 import React from "react";
 import "./Home.css";
+import { IoMdDownload } from "react-icons/io";
+import suprim_bishwakarma_MERN_web_developer from "../../assets/roastify/suprim_bishwakarma_MERN_web_developer.pdf";
 
 const Home = () => {
   return (
@@ -18,7 +20,14 @@ const Home = () => {
       </p>
       <p className="message">Let's build something amazing together!</p>
       <div className="home-buttons">
-        <button className="home-button">Download Resume</button>
+        <button className="home-button">
+          <a
+            href={suprim_bishwakarma_MERN_web_developer}
+            download="suprim_bishwakarma_MERN_web_developer"
+          >
+            Download Resume <IoMdDownload />
+          </a>
+        </button>
         <a href="#about">
           <button className="home-button">Learn More About Me</button>
         </a>
