@@ -55,21 +55,6 @@
   padding-bottom: 100px;
 }
 
-.home-button a {
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-  color: #222222;
-}
-
-.home-button a:hover {
-  transform: scale(1.1);
-  color: #ffffff;
-  background: #0172b0;
-  box-shadow: 0 12px 40px rgba(10, 68, 122, 0.59);
-}
-
 .home-button {
   padding: 10px 20px 10px 20px;
   font-size: 16px;
@@ -86,6 +71,16 @@
   color: #ffffff;
   background: #0172b0;
   box-shadow: 0 12px 40px rgba(10, 68, 122, 0.59);
+}
+
+.link-resume {
+  display: flex;
+  align-items: center;
+  color: #222222;
+}
+
+.link-resume:hover {
+  color: #ffffff;
 }
 
 /* @media (max-width: 768px) {

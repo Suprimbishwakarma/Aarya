@@ -24,6 +24,7 @@ const Home = () => {
           <a
             href={suprim_bishwakarma_MERN_web_developer}
             download="suprim_bishwakarma_MERN_web_developer"
+            className="link-resume"
           >
             Download Resume <IoMdDownload />
           </a>
