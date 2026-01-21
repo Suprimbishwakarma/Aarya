@@ -11,6 +11,11 @@ import {
   image03,
   image04,
   Output,
+  RickAndMorty,
+  CharacterRick,
+  ExploreRick,
+  IntroRick,
+  FilterRick,
 } from "../assets/assets";
 
 export const projectData = [
@@ -218,6 +223,92 @@ export const projectData = [
       "learned a new react hook (useActionState)",
       "learned full-stack integration",
       "got familiar with basic prompt engineering",
+    ],
+  },
+  {
+    id: "rick-and-morty",
+    title: "Rick and Morty Pro Analytics Dashboard",
+    description:
+      "A comprehensive analytics dashboard for the Rick and Morty universe, featuring character, location, and episode data visualization.",
+    details:
+      "This application serves as a deep-dive analytics tool for the Rick and Morty TV show. It interfaces with the public Rick and Morty API to provide detailed insights into characters, locations, and episodes. Users can explore character relations, filter by various attributes, and view statistics about the show's universe. It demonstrates complex state management, data fetching strategies, and responsive UI design.",
+    result: FilterRick,
+    screenshots: [IntroRick, ExploreRick, CharacterRick, FilterRick],
+    technologies: [
+      "React 19",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "Axios",
+      "Lucide React",
+      "clsx",
+      "React-Router",
+    ],
+    image: RickAndMorty,
+    githubLink: "https://github.com/Suprimbishwakarma/Rick-and-Morty-Pro-Analytics-Dashboard",
+    keyFeatures: [
+      "Character/Episode/Location analytics",
+      "Data visualization",
+      "Interactive filtering",
+      "Responsive Design",
+      "Pagination & Debounced Search",
+      "Persistent Storage", "Skeleton Loading", "Error Handling"
+    ],
+    projectStructure: `
+    Rick-and-Morty-Dashboard/
+    ├── src/
+    │   ├── components/      # UI Components
+    │   │   ├── CharacterCard.tsx
+    │   │   ├── CharacterFilters.tsx
+    │   │   ├── Info.tsx
+    │   │   └── Pagination.tsx
+    │   ├── pages/          # Route Pages
+    │   │   ├── CharacterDetail.tsx
+    │   │   ├── Home.tsx
+    │   │   └── Landing.tsx
+    │   ├── hooks/          # Custom Hooks
+    │   │   ├── useDebounce.ts
+    │   │   └── useLocalStorage.ts
+    │   ├── types/          # TypeScript Definitions
+    │   │   └── dataTypes.ts
+    │   ├── App.tsx         # Main Component
+    │   └── main.tsx        # Entry Point
+    `,
+    apiEndpoints: [
+      {
+        method: "GET",
+        endpoint: "/character",
+        description: "Fetch character data with filtering",
+      },
+      {
+        method: "GET",
+        endpoint: "/location",
+        description: "Fetch location data",
+      },
+      {
+        method: "GET",
+        endpoint: "/episode",
+        description: "Fetch episode data",
+      },
+    ],
+    flowChart:
+      "User Search/Filter -> Debounce Hook -> API Request -> Data Transformation -> Component Rendering",
+    challenges: [
+      "Managing complex strict type definitions with TypeScript",
+      "Optimizing performance with large lists",
+      "Implementing efficient search with debounce",
+      "Handling API pagination",
+    ],
+    contentConsumed: [
+      "https://rickandmortyapi.com/documentation",
+      "https://react.dev/reference/react/hooks",
+      "https://tailwindcss.com/docs",
+    ],
+    learnings: [
+      "Advanced TypeScript patterns for API responses",
+      "Custom hook implementation (useLocalStorage, useDebounce)",
+      "Vite + Tailwind CSS configuration",
+      "React Router v7 data flow",
     ],
   },
   /*
