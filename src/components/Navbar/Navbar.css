@@ -3,7 +3,8 @@
   justify-content: space-evenly;
   margin: auto;
   margin-top: 20px;
-  width: 400px;
+  width: 90%;
+  max-width: 400px;
   padding: 10px;
   border: 2px solid #222222;
   border-radius: 20px;
@@ -48,27 +49,20 @@ p {
   color: #222222;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .navbar {
-    width: 90%;
-    margin-top: 10px;
+    width: 95%;
     padding: 5px;
-  }
-
-  .home,
-  .projects,
-  .contact,
-  .skills {
-    gap: 4px;
+    margin-top: 10px;
   }
 
   .icon {
+    padding: 8px;
     width: 20px;
     height: 20px;
-    padding: 8px;
   }
 
   p {
-    font-size: 14px;
+    font-size: 0.8rem;
   }
-} */
+}

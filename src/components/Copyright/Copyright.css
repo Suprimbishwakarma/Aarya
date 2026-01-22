@@ -15,10 +15,12 @@
 }
 
 @keyframes King {
+
   0%,
   100% {
     transform: scale(1.3);
   }
+
   50% {
     transform: scale(1);
   }
@@ -35,7 +37,7 @@
   color: #0437f2;
 }
 
-/* @media (max-width: 768px) {
+@media (max-width: 768px) {
   .copyright-section {
     padding: 0 10px;
   }
@@ -48,4 +50,4 @@
     font-size: 14px;
     text-align: center;
   }
-} */
+}

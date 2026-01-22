@@ -16,3 +16,11 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+    max-width: 95vw;
+    margin: 0 auto;
+  }
+}
