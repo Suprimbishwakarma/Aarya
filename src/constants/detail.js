@@ -16,9 +16,77 @@ import {
   ExploreRick,
   IntroRick,
   FilterRick,
+  greenProfile,
+  green01,
+  green02,
+  green03,
+  green04,
 } from "../assets/assets";
 
 export const projectData = [
+  {
+    id: "green-nepal-tourism",
+    title: "Green Nepal Tourism",
+    description:
+      "A modern webpage designed to promote eco-friendly tourism in Nepal, featuring immersive galleries and detailed trekking packages.",
+    details:
+      "Green Nepal Tourism is a modern webpage designed to promote eco-friendly tourism in Nepal. This project showcases the breathtaking beauty of Nepal while emphasizing sustainable travel practices. Built with React and Vite, it delivers a fast, responsive, and aesthetically pleasing user experience. Key sections include an immersive gallery, detailed trekking packages with departure updates, and a dedicated sustainability page highlighting eco-friendly initiatives.",
+    screenshots: [green01, green02, green03, green04],
+    technologies: [
+      "React 19",
+      "Vite v7",
+      "Tailwind CSS v4",
+      "React Router v7",
+      "React Icons",
+      "ESLint",
+    ],
+    image: greenProfile,
+    githubLink: "https://github.com/Suprimbishwakarma/Green-Nepal-Tourism",
+    liveLink: "https://classy-beijinho-0adc3b.netlify.app/",
+    keyFeatures: [
+      "Immersive Gallery",
+      "Trekking Packages & Departure Updates",
+      "Sustainability Focus",
+      "Interactive UI with Tailwind v4",
+      "Responsive Design",
+    ],
+    projectStructure: `
+    Green-Nepal-Tourism/
+    ├── src/
+    │   ├── components/      # UI Components
+    │   │   ├── Banner.jsx
+    │   │   ├── Intro.jsx
+    │   │   ├── Menu.jsx
+    │   │   ├── Gallery.jsx
+    │   │   ├── TrekCard.jsx
+    │   │   ├── Sustainability.jsx
+    │   │   └── Footer.jsx
+    │   ├── pages/          # Route Pages
+    │   │   └── Home.jsx
+    │   ├── constants/      # Data Files
+    │   │   ├── detail.js
+    │   │   ├── departure.js
+    │   │   └── trek.js
+    │   ├── App.jsx         # Main Component
+    │   └── main.jsx        # Entry Point
+    `,
+    apiEndpoints: [],
+    flowChart:
+      "User -> Browse Packages -> View Details -> Check Departures -> Contact/Subscribe",
+    challenges: [
+      "Implementing responsive layouts with Tailwind CSS v4",
+      "Managing complex data structures for trekking packages",
+      "Ensuring high-performance image loading for the gallery",
+      "Standardizing padding and margins across components",
+    ],
+    contentConsumed: ["https://tailwindcss.com/docs"],
+    learnings: [
+      "Mastered Tailwind CSS v4 for rapid UI development",
+      "Structured data-driven components using constants",
+      "Improved component reusability and organization",
+      "Effective use of React Router for navigation",
+    ],
+  },
   {
     id: "roastify",
     title: "Roastify: AI Powered Spotify Music Roaster",
@@ -160,6 +228,7 @@ export const projectData = [
     result: Output,
     image: codeExplainer,
     githubLink: "https://github.com/suprimbishwakarma/AI-Code-Explainer",
+    liveLink: "https://ai-code-explainer-ys7b.vercel.app/",
     keyFeatures: [
       "Multi-language Support (Python, JS, Go, Rust, TS, Java)",
       "Instant AI Analysis and Explanation",

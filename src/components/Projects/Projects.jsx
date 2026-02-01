@@ -30,11 +30,19 @@ const Projects = () => {
               <p className="project-title">{project.title}</p>
               <p className="project-intro">{project.description}</p>
               <div className="project-button">
-                <a href={project.githubLink} target="_blank">
-                  <button className="github">
-                    <FaGithub />
-                  </button>
-                </a>
+                <div className="left-project-button">
+
+                  <a href={project.githubLink} target="_blank">
+                    <button className="github">
+                      <FaGithub />
+                    </button>
+                  </a>
+                  <a href={project.liveLink} target="_blank">
+                    <button className="live">
+                      live demo
+                    </button>
+                  </a>
+                </div>
                 <button
                   className="details"
                   onClick={() => handleOpenDetail(project)}

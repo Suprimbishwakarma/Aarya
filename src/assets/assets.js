@@ -16,6 +16,11 @@ import CharacterRick from "./RickAndMorty/CharacterRick.png";
 import ExploreRick from "./RickAndMorty/ExploreRick.png";
 import IntroRick from "./RickAndMorty/IntroRick.png";
 import FilterRick from "./RickAndMorty/FilterRick.png";
+import greenProfile from './GreenTourismNepal/Landing.png'
+import green01 from './GreenTourismNepal/green01.png';
+import green02 from './GreenTourismNepal/green02.png';
+import green03 from './GreenTourismNepal/green03.png';
+import green04 from './GreenTourismNepal/green04.png'
 
 export {
   roastify,
@@ -36,4 +41,9 @@ export {
   CharacterRick,
   ExploreRick,
   IntroRick,
+  greenProfile,
+  green01,
+  green02,
+  green03,
+  green04,
 };

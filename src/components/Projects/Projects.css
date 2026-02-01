@@ -68,6 +68,27 @@
   transition: all 0.1s ease;
 }
 
+
+.project-individual-section .project-content .project-button .live {
+  padding: 10px 20px 10px 20px;
+  background: #c3e7ef;
+  color: #222222;
+  border: 2px solid #222222;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+
+.project-individual-section .project-content .project-button .live:hover {
+  transform: scale(1.1);
+  color: #ffffff;
+  background: #0172b0;
+  box-shadow: 0 12px 40px rgba(10, 68, 122, 0.59);
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
 .project-individual-section .project-content .project-button .github:hover {
   transform: scale(1.1);
   color: #ffffff;
@@ -83,6 +104,12 @@
   border-radius: 10px;
   cursor: pointer;
   transition: all 0.1s ease;
+}
+
+.project-individual-section .project-content .project-button .left-project-button {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .project-individual-section .project-content .project-button .details:hover {
