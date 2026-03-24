@@ -1,7 +1,7 @@
 import React from "react";
 import "./Home.css";
 import { IoMdDownload } from "react-icons/io";
-import suprim_bishwakarma_MERN_web_developer from "../../assets/roastify/Suprim Bishwakarma_MERN_developer.pdf";
+import suprim_bishwakarma_MERN_web_developer from "../../assets/roastify/suprim_bishwakarma_MERN_web_developer.pdf";
 
 const Home = () => {
   return (

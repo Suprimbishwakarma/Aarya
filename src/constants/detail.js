@@ -21,6 +21,10 @@ import {
   green02,
   green03,
   green04,
+  job01,
+  job02,
+  job03,
+  job04,
 } from "../assets/assets";
 
 export const projectData = [
@@ -85,6 +89,52 @@ export const projectData = [
       "Structured data-driven components using constants",
       "Improved component reusability and organization",
       "Effective use of React Router for navigation",
+    ],
+  },
+  {
+    id: "jobs",
+    title: "Jobs portal",
+    description:
+      "A modern job portal built with React and Tailwind CSS and a responsive design for seamless user experience.",
+    details:
+      "This project is a modern job portal designed to connect job seekers with potential employers. Built with React and Tailwind CSS, it features a clean and responsive design that ensures a seamless user experience across devices. The portal allows users to view detailed job descriptions. It serves as a practical example of building a functional web application with a focus on user interface and experience.",
+    screenshots: [job01, job02, job03, job04],
+    technologies: ["React", "Tailwind CSS", "React Router", "React Icons"],
+    image: job01,
+    githubLink: "https://github.com/Suprimbishwakarma/VritJobs-portal",
+    liveLink: "https://dazzling-daifuku-98aa32.netlify.app/",
+    keyFeatures: [
+      "Clean and Responsive Design",
+      "Detailed Job Descriptions",
+      "User-friendly Interface",
+    ],
+    projectStructure: `VritJobs-portal/
+├── src/
+│   ├── components/       # Reusable UI components (Header, JobCards)
+│   ├── constants/        # Static data (Jobs.js)
+│   ├── pages/            # Page-level components (ListingPage, DetailsPage)
+│   ├── assets/           # Images and static assets
+│   ├── App.jsx           # Root component & Routing
+│   ├── main.jsx          # Entry point
+│   └── index.css         # Global styles & Tailwind imports
+├── public/               # Public assets
+└── package.json          # Project dependencies & scripts`,
+    apiEndpoints: [],
+    flowChart: "User -> Browse Jobs -> View Details -> Apply/Contact",
+    challenges: [
+      "Implementing a responsive UI for job listings",
+      "Managing and displaying large amounts of job data",
+      "Ensuring a smooth user experience for applying to jobs",
+    ],
+    contentConsumed: [
+      "https://react.dev/docs/getting-started",
+      "https://tailwindcss.com/docs",
+      "https://reactrouter.com/en/main",
+    ],
+    learnings: [
+      "Gained experience in building a functional job portal",
+      "Learned to manage and display complex data structures",
+      "Improved skills in React and Tailwind CSS for responsive design",
     ],
   },
   {

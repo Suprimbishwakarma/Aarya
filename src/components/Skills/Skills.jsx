@@ -1,6 +1,7 @@
 import React from "react";
 import "./Skills.css";
 import { IoLogoJavascript, IoLogoCss3, IoServerOutline } from "react-icons/io5";
+import { SiTypescript } from "react-icons/si";
 import {
   FaReact,
   FaHtml5,
@@ -31,8 +32,11 @@ const Skills = () => {
     {
       title: "Language",
       color: "#ff9f43",
-      icon: <IoLogoJavascript />,
-      skills: [{ name: "Javascript", icon: <IoLogoJavascript /> }],
+      icon: <IoLogoJavascript />, 
+      skills: [
+        { name: "Javascript", icon: <IoLogoJavascript /> },
+        { name: "TypeScript", icon: <SiTypescript /> },
+      ],
     },
     {
       title: "Frontend",

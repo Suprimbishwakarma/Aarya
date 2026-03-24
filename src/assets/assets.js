@@ -16,11 +16,15 @@ import CharacterRick from "./RickAndMorty/CharacterRick.png";
 import ExploreRick from "./RickAndMorty/ExploreRick.png";
 import IntroRick from "./RickAndMorty/IntroRick.png";
 import FilterRick from "./RickAndMorty/FilterRick.png";
-import greenProfile from './GreenTourismNepal/Landing.png'
-import green01 from './GreenTourismNepal/green01.png';
-import green02 from './GreenTourismNepal/green02.png';
-import green03 from './GreenTourismNepal/green03.png';
-import green04 from './GreenTourismNepal/green04.png'
+import greenProfile from "./GreenTourismNepal/Landing.png";
+import green01 from "./GreenTourismNepal/green01.png";
+import green02 from "./GreenTourismNepal/green02.png";
+import green03 from "./GreenTourismNepal/green03.png";
+import green04 from "./GreenTourismNepal/green04.png";
+import job01 from "./jobPortal/job01.png";
+import job02 from "./jobPortal/job02.png";
+import job03 from "./jobPortal/job03.png";
+import job04 from "./jobPortal/job04.png";
 
 export {
   roastify,
@@ -46,4 +50,8 @@ export {
   green02,
   green03,
   green04,
+  job01,
+  job02,
+  job03,
+  job04,
 };
